@@ -46,7 +46,7 @@ var mouseMoveFunction = (e, mouseMoveObj) => {
         var rotateBool = false;
         var multiplier = 1;
         var duration = 0;
-        var mainFloatNumber = 0.08;
+        var mainFloatNumber = -0.1;
 
         _.forEach(tags, function(value, key){
             if(value.indexOf("translate:") > -1){
