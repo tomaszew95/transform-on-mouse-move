@@ -108,8 +108,9 @@ var mouseMoveFunction = (e, mouseMoveObj) => {
                 }
             }
         }
-        let durat = 'all ' + duration + 'ms ease !important';
-        mouseMove.style.setProperty('transition', durat);
+        mouseMove.style.setProperty('transition-property', 'translate3d');
+        mouseMove.style.setProperty('transition-duration', duration);
+        mouseMove.style.setProperty('transition-timing-function', 'ease');
         mouseMove.style.transform = 'translate3d(' + moves[0] + 'px,' + moves[1] + 'px, 0px) rotateX(' + rotates[0] + 'deg) rotateY(' + rotates[1] + 'deg) rotateZ(' + rotates[2] + 'deg)';
     }
 }
